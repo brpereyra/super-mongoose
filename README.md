@@ -13,13 +13,20 @@ Code snippets that any mongoose and node developer needs
 
 ## Snippets
 
-| Snippet         |                                                                Action                                                                 |
-| --------------- | :-----------------------------------------------------------------------------------------------------------------------------------: |
-| sp-im           |                                                        import mongoose library                                                        |
-| sp-cs           |                                                          Create basic Schema                                                          |
-| sp-cm           |                                                          Create basic Model                                                           |
-| sp-a[fieldType] | Add field to schema - s -> string field, i -> integer field, b -> boolean field, d -> date field, a -> array field, o -> object field |
+| Snippet         |         Action          |
+| --------------- | :---------------------: |
+| sp-im           | import mongoose library |
+| sp-cs           |   Create basic Schema   |
+| sp-cm           |   Create basic Model    |
+| sp-a[fieldType] |   Add field to schema   |
 
+### fieldType
+
+- s -> string field
+- n -> number field
+- b -> boolean field
+- d -> date field
+- e -> enum field
 <!--
 
 ## Release Notes
