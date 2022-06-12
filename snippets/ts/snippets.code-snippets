@@ -1,0 +1,10 @@
+{
+    "import mongoose":{
+        "prefix":"sp-im",
+        "description":"import mongoose library",
+        "scope":"javascript",
+        "body":[
+            "import { Schema, model, Types } from 'mongoose';"
+        ]
+    }
+}

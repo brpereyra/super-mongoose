@@ -1,0 +1,10 @@
+{
+    "import mongoose":{
+        "prefix":"sp-im",
+        "description":"import mongoose library",
+        "scope":"typescript",
+        "body":[
+            "const { Schema, model, Types } = require('mongoose');"
+        ]
+    }
+}
