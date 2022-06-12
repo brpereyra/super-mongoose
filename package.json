@@ -1,15 +1,25 @@
 {
   "name": "super-mongoose",
-  "displayName": "super mongoose",
-  "description": "mongoose extension ",
+  "displayName": "Super mongoose",
+  "description": "Super mongoose is a mongoose snippets from mongoose library",
   "version": "0.0.1",
   "publisher": "brpereyra",
   "engines": {
     "vscode": "^1.68.0"
   },
+  "author": {
+    "name": "Bryan Pereyra",
+    "email": "brp2196@gmail.com",
+    "url": "https://brpereyra.com.ve"
+  },
+  "homepage": "https://github.com/brpereyra/super-express/#README.md",
+  "bugs": {
+    "url": "https://github.com/brpereyra/super-express/issues",
+    "email": "brp2196@gmail.com"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brpereyra/super-express"
+    "url": "https://github.com/brpereyra/super-mongoose.git"
   },
   "categories": [
     "Snippets"
@@ -20,15 +30,14 @@
     "express",
     "snippets",
     "typescript",
-    "javascript",
-    "prettier"
+    "javascript"
   ],
   "contributes": {
     "snippets": [
       {
         "language": "javascript",
         "path": "./snippets/js/snippets.code-snippets"
-      }
+      },
       {
         "language": "typescript",
         "path": "./snippets/ts/snippets.code-snippets"

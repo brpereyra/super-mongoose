@@ -1,35 +1,26 @@
-# super-mongoose README
+[![GitHub issues](https://img.shields.io/github/issues/brpereyra/super-mongoose?style=plastic)](https://github.com/brpereyra/react-component-generator/issues)
+[![GitHub forks](https://img.shields.io/github/forks/brpereyra/super-mongoose?style=plastic)](https://github.com/brpereyra/react-component-generator/network)
+[![GitHub stars](https://img.shields.io/github/stars/brpereyra/super-mongoose?style=plastic)](https://github.com/brpereyra/react-component-generator/stargazers)
+[![GitHub license](https://img.shields.io/github/license/brpereyra/super-mongoose?style=plastic)](https://github.com/brpereyra/react-component-generator/blob/master/LICENSE)
 
-This is the README for your extension "super-mongoose". After writing up a brief description, we recommend including the following sections.
+# Super mongoose
 
-## Features
+It is a group of code fragments for common use in application development based primarily on node js and express with mongo db as a backend.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Code snippets that any mongoose and node developer needs
 
-For example if there is an image subfolder under your extension project workspace:
+## Do you want to collaborate with the project ?, Write us [Here](mailto:brp2196@gmail.com)
 
-\!\[feature X\]\(images/feature-x.png\)
+## Snippets
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+| Snippet         |                                                                Action                                                                 |
+| --------------- | :-----------------------------------------------------------------------------------------------------------------------------------: |
+| sp-im           |                                                        import mongoose library                                                        |
+| sp-cs           |                                                          Create basic Schema                                                          |
+| sp-cm           |                                                          Create basic Model                                                           |
+| sp-a[fieldType] | Add field to schema - s -> string field, i -> integer field, b -> boolean field, d -> date field, a -> array field, o -> object field |
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+<!--
 
 ## Release Notes
 
@@ -47,19 +38,6 @@ Fixed issue #.
 
 Added features X, Y, and Z.
 
------------------------------------------------------------------------------------------------------------
+---
 
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+-->

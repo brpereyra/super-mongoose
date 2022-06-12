@@ -1,10 +1,62 @@
 {
-    "import mongoose":{
-        "prefix":"sp-im",
-        "description":"import mongoose library",
-        "scope":"javascript",
-        "body":[
-            "import { Schema, model, Types } from 'mongoose';"
-        ]
-    }
+  "import mongoose": {
+    "prefix": "sp-im",
+    "description": "import mongoose library",
+    "scope": "javascript",
+    "body": ["import { Schema, model, Types } from 'mongoose';"]
+  },
+  "Create Schema": {
+    "prefix": "sp-cs",
+    "description": "Create mongoose Schema",
+    "scope": "typescript",
+    "body": [
+      "const $1Schema = new Schema({",
+      "  $2",
+      "},{",
+      "\ttimestamps: true,",
+      "});"
+    ]
+  },
+  "Create Model": {
+    "prefix": "sp-cm",
+    "description": "Create mongoose Model",
+    "scope": "javascript",
+    "body": ["const $1 = model('$1', $2Schema);"]
+  },
+  "Add string field": {
+    "prefix": "sp-as",
+    "description": "Add string field",
+    "scope": "javascript",
+    "body": ["$1: {", "\ttype: String,", "  },"]
+  },
+  "Add number field": {
+    "prefix": "sp-an",
+    "description": "Add number field",
+    "scope": "javascript",
+    "body": ["$1: {", "\ttype: Number,", "  },"]
+  },
+  "Add boolean field": {
+    "prefix": "sp-ab",
+    "description": "Add boolean field",
+    "scope": "javascript",
+    "body": ["$1: {", "\ttype: Boolean,", "default: false", "  },"]
+  },
+  "Add date field": {
+    "prefix": "sp-ad",
+    "description": "Add date field",
+    "scope": "javascript",
+    "body": ["$1: {", "\ttype: Date,", "  },"]
+  },
+  "Add object field": {
+    "prefix": "sp-ao",
+    "description": "Add object field",
+    "scope": "javascript",
+    "body": ["$1: {", "\ttype: Object,", "  },"]
+  },
+  "add enum field": {
+    "prefix": "sp-ae",
+    "description": "Add enum field",
+    "scope": "javascript",
+    "body": ["$1: {", "\ttype: ${2:String},", "enum:[$3,$4,$5]", "  },"]
+  }
 }
