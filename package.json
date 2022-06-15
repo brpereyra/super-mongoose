@@ -2,7 +2,7 @@
   "name": "super-mongoose",
   "displayName": "Super mongoose",
   "description": "Super mongoose is a mongoose snippets from mongoose library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "brpereyra",
   "engines": {
     "vscode": "^1.68.0"
