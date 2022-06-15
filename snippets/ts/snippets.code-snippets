@@ -2,7 +2,7 @@
   "import mongoose": {
     "prefix": "sp-im",
     "description": "import mongoose library",
-    "scope": "javascript",
+    "scope": "typescript",
     "body": ["import { Schema, model, Types } from 'mongoose';"]
   },
   "Create Schema": {
@@ -20,43 +20,136 @@
   "Create Model": {
     "prefix": "sp-cm",
     "description": "Create mongoose Model",
-    "scope": "javascript",
+    "scope": "typescript",
     "body": ["const $1 = model('$1', $2Schema);"]
   },
   "Add string field": {
     "prefix": "sp-as",
     "description": "Add string field",
-    "scope": "javascript",
+    "scope": "typescript",
     "body": ["$1: {", "\ttype: String,", "  },"]
   },
   "Add number field": {
     "prefix": "sp-an",
     "description": "Add number field",
-    "scope": "javascript",
+    "scope": "typescript",
     "body": ["$1: {", "\ttype: Number,", "  },"]
   },
   "Add boolean field": {
     "prefix": "sp-ab",
     "description": "Add boolean field",
-    "scope": "javascript",
+    "scope": "typescript",
     "body": ["$1: {", "\ttype: Boolean,", "default: false", "  },"]
   },
   "Add date field": {
     "prefix": "sp-ad",
     "description": "Add date field",
-    "scope": "javascript",
+    "scope": "typescript",
     "body": ["$1: {", "\ttype: Date,", "  },"]
   },
   "Add object field": {
     "prefix": "sp-ao",
     "description": "Add object field",
-    "scope": "javascript",
+    "scope": "typescript",
     "body": ["$1: {", "\ttype: Object,", "  },"]
   },
   "add enum field": {
     "prefix": "sp-ae",
     "description": "Add enum field",
-    "scope": "javascript",
+    "scope": "typescript",
     "body": ["$1: {", "\ttype: ${2:String},", "enum:[$3,$4,$5]", "  },"]
+  },
+  "Add array field": {
+    "prefix": "sp-aa",
+    "description": "Add array field",
+    "scope": "typescript",
+    "body": ["$1: [", "\t{type:$2}", "  ],"]
+  },
+  "find by id callback": {
+    "prefix": "sp-fic",
+    "description": "find by id",
+    "scope": "typescript",
+    "body": [
+      "$1.findById($2, function(err, $3) {",
+      "  if (err) return console.error(err);",
+      "  console.log($3);",
+      "});"
+    ]
+  },
+  "find by id promise": {
+    "prefix": "sp-fip",
+    "description": "find by id promise",
+    "scope": "typescript",
+    "body": [
+      "$1.findById($2).then(function($3) {",
+      "  console.log($3);",
+      "}).catch(function(err) {",
+      "  console.error(err);",
+      "});"
+    ]
+  },
+  "find by id async": {
+    "prefix": "sp-fi",
+    "description": "find by id async",
+    "scope": "typescript",
+    "body": ["const $1 = await $2.findById($3);"]
+  },
+  "find One callback": {
+    "prefix": "sp-foc",
+    "description": "find One",
+    "scope": "typescript",
+    "body": [
+      "$1.findOne({$2}, function(err, $3) {",
+      "  if (err) return console.error(err);",
+      "  console.log($3);",
+      "});"
+    ]
+  },
+  "find One promise": {
+    "prefix": "sp-fcp",
+    "description": "find One",
+    "scope": "typescript",
+    "body": [
+      "$1.findOne({$2}).then(function($3) {",
+      "  console.log($3);",
+      "}).catch(function(err) {",
+      "  console.error(err);",
+      "});"
+    ]
+  },
+  "find One async await": {
+    "prefix": "sp-fo",
+    "description": "find One",
+    "scope": "typescript",
+    "body": ["const $1 = await $2.findOne({$3});"]
+  },
+  "find all callback": {
+    "prefix": "sp-fac",
+    "description": "find all",
+    "scope": "typescript",
+    "body": [
+      "$1.find({$2}, function(err, $3) {",
+      "  if (err) return console.error(err);",
+      "  console.log($3);",
+      "});"
+    ]
+  },
+  "find all promise": {
+    "prefix": "sp-fap",
+    "description": "find all",
+    "scope": "typescript",
+    "body": [
+      "$1.find({$2}).then(function($3) {",
+      "  console.log($3);",
+      "}).catch(function(err) {",
+      "  console.error(err);",
+      "});"
+    ]
+  },
+  "find all async": {
+    "prefix": "sp-fa",
+    "description": "find all",
+    "scope": "typescript",
+    "body": ["const $1 = await $2.find({$3});"]
   }
 }

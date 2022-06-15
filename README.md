@@ -11,7 +11,9 @@ Code snippets that any mongoose and node developer needs
 
 ## Do you want to collaborate with the project ?, Write us [Here](mailto:brp2196@gmail.com)
 
-## Snippets
+## Snippets List
+
+### Base Snippets
 
 | Snippet         |         Action          |
 | --------------- | :---------------------: |
@@ -20,31 +22,51 @@ Code snippets that any mongoose and node developer needs
 | sp-cm           |   Create basic Model    |
 | sp-a[fieldType] |   Add field to schema   |
 
+### Find by id
+
+| Snippet |       Action        |
+| ------- | :-----------------: |
+| sp-fi   |  Find by id await   |
+| sp-fic  | Find by id callback |
+| sp-fip  | Find by id promise  |
+
+### Find One
+
+| Snippet |      Action       |
+| ------- | :---------------: |
+| sp-fo   |  Find one await   |
+| sp-foc  | Find one callback |
+| sp-fop  | Find one promise  |
+
+### Find All
+
+| Snippet |      Action       |
+| ------- | :---------------: |
+| sp-fa   |  Find all await   |
+| sp-fac  | Find all callback |
+| sp-fap  | Find all promise  |
+
 ### fieldType
 
-- s -> string field
-- n -> number field
-- b -> boolean field
-- d -> date field
-- e -> enum field
-<!--
+- s -> String field
+- n -> Number field
+- b -> Boolean field
+- d -> Date field
+- e -> Enum field
+- a -> Array field
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+## [0.0.2] - 2022-06-14
 
-### 1.0.0
+### Added
 
-Initial release of ...
+- Array Field
 
-### 1.0.1
+### fixed
 
-Fixed issue #.
+- Table Description in the Readme file
 
-### 1.1.0
+## [0.0.1] - Initial release
 
-Added features X, Y, and Z.
-
----
-
--->
+- Initial release
